@@ -15,3 +15,12 @@ export async function getCandies() {
     return response.data;
 
 }
+
+export async function getFlowers() {
+    const response = await client
+        .from('flowers')
+        .select();
+
+    console.log(response.data);
+    return response.data;
+}
