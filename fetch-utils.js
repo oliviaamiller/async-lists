@@ -33,3 +33,12 @@ export async function getBooks() {
     console.log(response.data);
     return response.data;
 }
+
+export async function getTeas() {
+    const response = await client 
+        .from('tea')
+        .select();
+
+    console.log(response.data);
+    return response.data;
+}
