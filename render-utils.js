@@ -14,3 +14,21 @@ export function renderCandies(candy) {
 
     return div;
 }
+
+
+export function renderFlowers(flower) {
+    const div = document.createElement('div');
+    const name = document.createElement('p');
+    const bloom = document.createElement('p');
+    const zone = document.createElement('p');
+    const edible = document.createElement('p');
+
+    name.textContent = flower.name;
+    bloom.textContent = flower.bloom;
+    zone.textContent = flower.zone;
+    edible.textContent = flower.edible;
+
+    div.append(name, bloom, zone, edible);
+
+    return div;
+}
