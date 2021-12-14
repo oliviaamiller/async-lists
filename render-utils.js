@@ -55,3 +55,22 @@ export function renderBooks(book) {
 
     return div;
 }
+
+export function renderTeas(tea) {
+    const div = document.createElement('div');
+    const name = document.createElement('p');
+    const type = document.createElement('p');
+    const caffeine = document.createElement('p');
+    const origin = document.createElement('p');
+
+    div.classList.add('books-div');
+
+    name.textContent = tea.name;
+    type.textContent = tea.type;
+    caffeine.textContent = tea.caffeine;
+    origin.textContent = tea.origin;
+
+    div.append(name, type, caffeine, origin);
+
+    return div;
+}
