@@ -36,3 +36,22 @@ export function renderFlowers(flower) {
 
     return div;
 }
+
+export function renderBooks(book) {
+    const div = document.createElement('div');
+    const title = document.createElement('p');
+    const author = document.createElement('p');
+    const genre = document.createElement('p');
+    const year = document.createElement('p');
+
+    div.classList.add('books-div');
+
+    title.textContent = book.title;
+    author.textContent = book.author;
+    genre.textContent = book.genre;
+    year.textContent = book.year;
+
+    div.append(title, author, genre, year);
+
+    return div;
+}
