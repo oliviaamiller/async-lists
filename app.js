@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { getCandies, getFlowers } from './fetch-utils.js';
+import { getCandies, getFlowers, getBooks } from './fetch-utils.js';
 
 // let state
 
@@ -11,3 +11,5 @@ import { getCandies, getFlowers } from './fetch-utils.js';
 getCandies();
 
 getFlowers();
+
+getBooks();

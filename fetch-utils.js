@@ -24,3 +24,12 @@ export async function getFlowers() {
     console.log(response.data);
     return response.data;
 }
+
+export async function getBooks() {
+    const response = await client
+        .from('books')
+        .select();
+
+    console.log(response.data);
+    return response.data;
+}
