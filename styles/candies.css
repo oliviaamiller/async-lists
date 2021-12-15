@@ -7,46 +7,44 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgb(237, 233, 236);
+	background-color: rgb(255, 249, 243)
+}
+#candies-list-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
 }
 
-
-.lists {
+.candies-div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-top: 150px;
-    
+	margin-top: 25px;
+	border: 2px solid rgb(235, 163, 224);
+	width: 400px;
+	color: rgb(103, 60, 60);
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px;
 }
 
-.title {
+.candies-name{
     color: rgb(255, 103, 8);
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 20px;
     margin: 20px;
+	
 }
 
 .contents {
     font-size: 40px;
     font-family: 'Parisienne', cursive;
     font-weight: lighter;
-}
-
-.contents a:link { 
-    color:rgb(37, 25, 85);
-    text-decoration: none;
-}
-
-.contents a:visited { 
-    color:rgb(37, 25, 85);
-    text-decoration: none;
-}
-
-.contents a:hover { 
-    color:rgb(255, 126, 210);
-    text-decoration: none;
 }

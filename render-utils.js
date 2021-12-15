@@ -6,11 +6,12 @@ export function renderCandies(candy) {
     const year = document.createElement('p');
 
     div.classList.add('candies-div');
+    name.classList.add('candies-name');
 
     name.textContent = candy.name;
-    type.textContent = candy.type;
-    flavor.textContent = candy.flavor;
-    year.textContent = candy.year;
+    type.textContent = `type: ${candy.type}`;
+    flavor.textContent = `flavor: ${candy.flavor}`;
+    year.textContent = `year created: ${candy.year}`;
 
     div.append(name, type, flavor, year);
 
