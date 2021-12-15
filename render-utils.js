@@ -47,11 +47,13 @@ export function renderBooks(book) {
     const year = document.createElement('p');
 
     div.classList.add('books-div');
+    title.classList.add('books-title');
+
 
     title.textContent = book.title;
-    author.textContent = book.author;
-    genre.textContent = book.genre;
-    year.textContent = book.year;
+    author.textContent = `author: ${book.author}`;
+    genre.textContent = `genre: ${book.genre}`;
+    year.textContent = `published: ${book.year}`;
 
     div.append(title, author, genre, year);
 
