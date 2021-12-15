@@ -27,11 +27,12 @@ export function renderFlowers(flower) {
     const edible = document.createElement('p');
 
     div.classList.add('flowers-div');
+    name.classList.add('flowers-name');
 
     name.textContent = flower.name;
-    bloom.textContent = flower.bloom;
-    zone.textContent = flower.zone;
-    edible.textContent = flower.edible;
+    bloom.textContent = `in bloom: ${flower.bloom}`;
+    zone.textContent = `hardiness zone: ${flower.zone}`;
+    edible.textContent = `edible? ${flower.edible}`;
 
     div.append(name, bloom, zone, edible);
 

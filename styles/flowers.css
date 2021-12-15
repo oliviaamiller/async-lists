@@ -7,9 +7,9 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-	background-color: rgb(255, 249, 243)
+	background-color: rgb(241, 255, 214)
 }
-#candies-list-container {
+#flowers-list-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -17,24 +17,24 @@ html, body {
 	justify-content: center;
 }
 
-.candies-div {
+.flowers-div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     align-items: center;
 	margin-top: 25px;
-	border: 4px solid rgb(235, 163, 224);
+	border: 4px solid rgb(66, 145, 133);
 	width: 400px;
-	color: rgb(103, 60, 60);
+	color: rgb(41, 126, 196);
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 18px;
 	padding: 20px;
 }
 
-.candies-name {
-    color: rgb(255, 103, 8);
+.flowers-name {
+    color: rgb(255, 104, 220);
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: bold;
