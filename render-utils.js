@@ -67,12 +67,14 @@ export function renderTeas(tea) {
     const caffeine = document.createElement('p');
     const origin = document.createElement('p');
 
-    div.classList.add('books-div');
+    div.classList.add('teas-div');
+    name.classList.add('teas-name');
+
 
     name.textContent = tea.name;
-    type.textContent = tea.type;
-    caffeine.textContent = tea.caffeine;
-    origin.textContent = tea.origin;
+    type.textContent = `type: ${tea.type}`;
+    caffeine.textContent = `caffeinated? ${tea.caffeine}`;
+    origin.textContent = `origin: ${tea.origin}`;
 
     div.append(name, type, caffeine, origin);
 

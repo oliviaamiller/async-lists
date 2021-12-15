@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+	background-color: rgb(48, 53, 38)
+}
+#tea-list-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.teas-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+	margin-top: 25px;
+	border: 4px solid rgb(247, 244, 213);
+	width: 400px;
+	color: rgb(41, 126, 196);
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.teas-name {
+    color: rgb(242, 235, 28);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+	
+}
