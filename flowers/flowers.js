@@ -13,5 +13,5 @@ window.addEventListener('load', async() => {
     }
 
 
-})
+});
 
